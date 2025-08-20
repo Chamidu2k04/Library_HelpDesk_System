@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Library Helpdesk</title>
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<header>
+    <h1>Library Helpdesk</h1>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="submit-ticket.html">Submit New Ticket</a>
+    <a href="index.html" class="active">View Tickets</a>
+</nav>
+
+
+    <table class="ticket-list">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Technical Support</td>
+            <td>Unable to access e-resources</td>
+            <td><span class="status ongoing">Ongoing</span></td>
+            <td class="ticket-actions">
+                <button class="view">View</button>
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+<footer>
+    <p>&copy; 2025 Library Helpdesk | All Rights Reserved</p>
+</footer>
+</body>
+</html>

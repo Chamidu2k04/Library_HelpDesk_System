@@ -1,0 +1,199 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+    height: 100%;              /* full height */
+    display: flex;
+    flex-direction: column;    /* stack header, nav, main, footer */
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* Navigation */
+nav {
+    background: #34495e;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #27ae60;
+    border-bottom: 2px solid #27ae60;
+    padding-bottom: 3px;
+}
+
+/* Back Button */
+.back-btn {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-btn i {
+    margin-right: 6px;
+}
+
+.back-btn:hover {
+    color: #27ae60;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    flex: 1; /* ensures it grows to push footer down */
+}
+
+/* Form */
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border: 1px solid #27ae60;
+    outline: none;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #27ae60;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #219150;
+}
+
+/* Ticket Table */
+.ticket-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.ticket-list th,
+.ticket-list td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.ticket-list th {
+    background: #2c3e50;
+    color: white;
+}
+
+.ticket-list tr:hover {
+    background: #f1f1f1;
+}
+
+.ticket-actions button {
+    margin-right: 6px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.ticket-actions .view { background: #8e44ad; color: white; }
+.ticket-actions .edit { background: #2980b9; color: white; }
+.ticket-actions .delete { background: #c0392b; color: white; }
+
+.ticket-actions button:hover { opacity: 0.85; }
+
+/* Status Badges */
+.status {
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.status.ongoing { background: #f39c12; }
+.status.resolved { background: #27ae60; }
+.status.pending { background: #e74c3c; }
+
+/* Footer (Sticky) */
+footer {
+    padding: 15px;
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    border-top: 3px solid #27ae60;
+    margin-top: auto;   /* pushes footer to bottom */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+    .ticket-list th,
+    .ticket-list td {
+        font-size: 0.9rem;
+    }
+}
