@@ -153,7 +153,6 @@ form button:hover {
     transition: 0.3s;
 }
 
-.ticket-actions .view { background: #8e44ad; color: white; }
 .ticket-actions .edit { background: #2980b9; color: white; }
 .ticket-actions .delete { background: #c0392b; color: white; }
 
