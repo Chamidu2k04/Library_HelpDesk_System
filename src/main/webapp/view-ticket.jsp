@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>View Ticket - Library Helpdesk</title>
+    <title>View Ticket</title>
     <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
@@ -18,7 +18,6 @@
     <a href="viewTickets" class="active">View Tickets</a>
 </nav>
 
-<main class="container">
     <h2>Ticket Details</h2>
     <%
         String id = request.getParameter("id");
@@ -43,7 +42,6 @@
             } catch(Exception e) { e.printStackTrace(); }
         }
     %>
-</main>
 
 <footer>
     <p>&copy; 2025 Library Helpdesk | All Rights Reserved</p>

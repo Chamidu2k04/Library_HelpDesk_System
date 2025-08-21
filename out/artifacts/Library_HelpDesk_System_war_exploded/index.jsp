@@ -19,8 +19,6 @@
     <a href="viewTickets" class="active">View Tickets</a>
 </nav>
 
-<main class="container">
-    <h2>Tickets Dashboard</h2>
     <table class="ticket-list">
         <thead>
         <tr>
@@ -45,7 +43,6 @@
                 <td>${ticket.mobile}</td>
                 <td><span class="status ${ticket.status.toLowerCase()}">${ticket.status}</span></td>
                 <td class="ticket-actions">
-                    <a href="view-ticket.jsp?id=${ticket.id}"><button class="view">View</button></a>
                     <a href="edit-ticket.jsp?id=${ticket.id}"><button class="edit">Edit</button></a>
                     <a href="deleteTicket?id=${ticket.id}" onclick="return confirm('Are you sure?');"><button class="delete">Delete</button></a>
                 </td>
@@ -53,7 +50,6 @@
         </c:forEach>
         </tbody>
     </table>
-</main>
 
 <footer>
     <p>&copy; 2025 Library Helpdesk | All Rights Reserved</p>

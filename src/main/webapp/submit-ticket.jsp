@@ -35,7 +35,7 @@
         </select>
 
         <label for="description">Description</label>
-        <textarea id="description" name="description" rows="5" required></textarea>
+        <textarea id="description" name="description" rows="10" required></textarea>
 
         <label for="email">Email (optional)</label>
         <input type="email" id="email" name="email">
